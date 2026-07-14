@@ -1,37 +1,227 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bursa Profesyonel Apartman Yönetimi</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl text-brand-900 tracking-tight">Merkez<span class="text-brand-600">Yönetim</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hakkimizda" class="text-gray-600 hover:text-brand-600 transition font-medium">Hakkımızda</a>
+                    <a href="#hizmetler" class="text-gray-600 hover:text-brand-600 transition font-medium">Hizmetlerimiz</a>
+                    <a href="#blog" class="text-gray-600 hover:text-brand-600 transition font-medium">Blog</a>
+                    <a href="#iletisim" class="text-gray-600 hover:text-brand-600 transition font-medium">İletişim</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/905306782856" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-medium transition shadow-lg flex items-center gap-2">
+                        WhatsApp Destek
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Bölümü -->
-    <header class="bg-blue-900 text-white py-20 text-center">
-        <h1 class="text-4xl font-bold mb-4">Apartmanınızın Yönetimi Artık Bizde</h1>
-        <p class="text-xl mb-8">Bursa'da profesyonel, şeffaf ve hukuki altyapılı apartman yönetimi.</p>
-        <a href="https://wa.me/905306782856" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg">Ücretsiz Analiz İsteyin (WhatsApp)</a>
-    </header>
-
-    <!-- Hizmetler -->
-    <section class="max-w-4xl mx-auto py-16 px-4">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="font-bold text-xl mb-2">Hukuki Takip</h3>
-                <p>Aidat borçları için profesyonel hukuk desteği.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="font-bold text-xl mb-2">Şeffaf Muhasebe</h3>
-                <p>Tüm gelir ve giderler anlık kontrol altında.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="font-bold text-xl mb-2">Bakım & Onarım</h3>
-                <p>Arızalara hızlı müdahale, sorunsuz yaşam.</p>
+    <section class="pt-32 pb-20 bg-brand-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                Apartmanınızda Aidat Sorununa <br><span class="text-brand-100">Hukuki ve Kesin Çözüm</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-brand-50 max-w-3xl mx-auto mb-10 font-light">
+                Yöneticilik yükünden kurtulun. Uzman hukuk kadromuz ve şeffaf dijital altyapımızla Bursa'nın en güvenilir yönetim hizmetini sunuyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#iletisim" class="bg-white text-brand-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition text-lg">
+                    Ücretsiz Analiz İste
+                </a>
+                <a href="#hizmetler" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-brand-900 transition text-lg">
+                    Nasıl Çalışıyoruz?
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Neden Bizi Seçmelisiniz?</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Yıllardır eski apartmanlarda yaşanan en büyük sorun, ödenmeyen aidatlar yüzünden komşuların birbiriyle yüz göz olmasıdır. Biz, güçlü hukuk altyapımız ve tahsilat odaklı yaklaşımımızla yöneticileri bu ağır yükten kurtarıyoruz.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Kurduğumuz sistem sayesinde apartmanınıza ekstra bir masraf çıkarmıyor, aksine yıllardır içeride biriken borçları kasaya sokarak binanızın değerini artırıyoruz.
+                    </p>
+                    <ul class="space-y-4 text-gray-700 font-medium">
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Tamamen şeffaf ve denetlenebilir bütçe yönetimi</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Geciken aidatlar için anında hukuki aksiyon</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 7/24 ulaşılabilir acil durum desteği</li>
+                    </ul>
+                </div>
+                <div class="mt-10 lg:mt-0 relative">
+                    <img class="rounded-xl shadow-2xl" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bursa Apartman">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <section id="hizmetler" class="py-20 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Profesyonel Çözümlerimiz</h2>
+                <p class="mt-4 text-xl text-gray-600">Binanızın tüm ihtiyaçlarını tek merkezden yönetiyoruz.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kart 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hukuki Aidat Takibi</h3>
+                    <p class="text-gray-600">Ödenmeyen aidatlar için komşularınızla kötü olmayın. Anlaşmalı hukuk ofisimizle icra ve tahsilat süreçlerini biz yönetiyoruz.</p>
+                </div>
+                <!-- Kart 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Şeffaf Muhasebe</h3>
+                    <p class="text-gray-600">Dijital altyapımızla nereye ne harcandığını kuruşu kuruşuna görün. İşletme defteri ve banka mutabakatları hatasız işlenir.</p>
+                </div>
+                <!-- Kart 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Teknik Bakım ve Onarım</h3>
+                    <p class="text-gray-600">Asansör bakımları, su deposu temizliği, çatı onarımı ve periyodik ilaçlama işlemleri zamanında, en uygun maliyetle çözülür.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rastgele Blog Yazıları -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Bilgi Bankası</h2>
+                <p class="mt-4 text-xl text-gray-600">Apartman yönetimi ve hukuki haklarınız hakkında güncel içerikler.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="p-6">
+                        <div class="text-brand-600 text-sm font-semibold mb-2">Hukuki Rehber</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Eski Apartmanlarda İcra Takibi Nasıl Başlatılır?</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Aidatını ödemeyen kat maliklerine karşı yöneticilerin izlemesi gereken yasal prosedürler ve karar defteri önemi...</p>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-sm text-gray-500">Yazar: Zeynep</span>
+                            <a href="#" class="text-brand-600 font-medium hover:underline">Devamını Oku &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Blog 2 -->
+                <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="p-6">
+                        <div class="text-brand-600 text-sm font-semibold mb-2">Mali Yönetim</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">İşletme Projesi Hazırlarken Dikkat Edilmesi Gerekenler</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Yeni yıla girerken bina bütçesini doğru planlamanın ve sürpriz masrafların önüne geçmenin altın kuralları...</p>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-sm text-gray-500">Yazar: Musa Can</span>
+                            <a href="#" class="text-brand-600 font-medium hover:underline">Devamını Oku &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Blog 3 -->
+                <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="p-6">
+                        <div class="text-brand-600 text-sm font-semibold mb-2">Bina Bakımı</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Su Deposu Temizliği Yasal Bir Zorunluluk mu?</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Halk sağlığını doğrudan etkileyen su depolarının periyodik temizlik süreleri ve belediye denetim süreçleri...</p>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="text-sm text-gray-500">Yazar: Operasyon Ekibi</span>
+                            <a href="#" class="text-brand-600 font-medium hover:underline">Devamını Oku &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Formu -->
+    <section id="iletisim" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Hemen Ücretsiz Analiz İsteyin</h2>
+                <p class="mt-4 text-gray-400">Formu doldurun, binanızın durumunu inceleyip size en uygun yönetim planını çıkaralım.</p>
+            </div>
+            
+            <form action="#" method="POST" class="bg-white rounded-2xl p-8 shadow-2xl text-gray-800">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Adınız Soyadınız</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition" placeholder="Ahmet Yılmaz">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Telefon Numaranız</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition" placeholder="0555 123 45 67">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Apartman/Site Adı</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition" placeholder="Örnek Apartmanı">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Daire Sayısı</label>
+                        <input type="number" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition" placeholder="Örn: 13">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Mesajınız / Mevcut Sorunlar</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition" placeholder="Apartmanımızda ödenmeyen aidatlar var..."></textarea>
+                </div>
+                <button type="button" class="w-full bg-brand-900 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-lg transition text-lg shadow-md">
+                    Teklif İste
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <span class="font-bold text-2xl text-white tracking-tight block mb-4">Merkez<span class="text-brand-600">Yönetim</span></span>
+            <p>&copy; 2026 Bursa Profesyonel Apartman Yönetimi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
